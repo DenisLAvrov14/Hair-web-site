@@ -1,43 +1,61 @@
 /* Main.css */
 .main-container {
-    position: relative; /* Устанавливаем позицию "относительно" для позиционирования элементов внутри */
-    width: 100%; /* Ширина контейнера */
-    height: 400px; /* Высота контейнера */
+    background-image: url('../../public/mainbackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.logo-container {
-    position: absolute; /* Устанавливаем абсолютную позицию для контейнера с логотипом */
-    top: 20px; /* Отступ сверху */
-    left: 20px; /* Отступ слева */
+.custom-logo-container {
+    width: 200px;
+    height: 200px;
+    padding-top: 4%;
+    padding-right: 2%;
 }
 
-.logo {
-    width: 100px; /* Задаем ширину логотипа */
-    height: auto; /* Высота будет автоматически подстроена для сохранения пропорций */
+.custom-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.text-form {
-    /* Стили для формы */
-    position: absolute; /* Устанавливаем абсолютную позицию для формы */
-    bottom: 20px; /* Отступ снизу */
-    left: 50%; /* Устанавливаем форму по центру горизонтально */
-    transform: translateX(
-        -50%
-    ); /* Сдвигаем форму на половину ее ширины влево, чтобы она была точно по центру */
-    background-color: #ffffff; /* Белый фон формы */
-    padding: 20px; /* Отступы внутри формы */
-    display: flex; /* Используем Flexbox для выравнивания элементов внутри формы */
-    align-items: center; /* Выравниваем элементы вертикально по центру */
-    border-radius: 5px; /* Закругляем углы формы */
+.selling-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 400px;
+    padding-right: 2%;
+    justify-content: center; /* Centers the text and button vertically */
 }
 
-input {
-    /* Стили для текстового поля ввода */
-    flex: 1; /* Размер текстового поля будет растягиваться, чтобы занимать доступное пространство */
-    padding: 10px; /* Отступы внутри текстового поля */
-    border: 1px solid #ccc; /* Стиль границы текстового поля */
-    border-radius: 5px; /* Закругляем углы текстового поля */
+.selling-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/* Стили для кнопки (переиспользуем компонент FormButton) */
-/* Добавьте стили для кнопки в зависимости от ваших потребностей */
+.selling-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.selling-text button {
+    background-color: #103c3b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selling-text button:hover {
+    background-color: #0a2726;
+}

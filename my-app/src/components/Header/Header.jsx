@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import logo from '../../public/logo.png'
-import { Layout } from '../Layout/Layout'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
     return (
@@ -10,7 +10,20 @@ export const Header = () => {
                 <img src={logo} alt="Logo" className="logo" />
             </div>
             <nav>
-                <Layout />
+                <ul>
+                    <li>
+                        <NavLink to="/">Главная</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/prise">Цены</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gallery">Галерея</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/faq">Вопросы</NavLink>
+                    </li>
+                </ul>
             </nav>
         </header>
     )
