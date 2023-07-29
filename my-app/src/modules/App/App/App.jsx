@@ -5,9 +5,8 @@ import { Routes, Route } from 'react-router-dom'
 import { Prise } from '../../Prise/Prise'
 import { Gallery } from '../../Gallery/Gallery'
 import { Faq } from '../../Faq/Faq'
-import { Main } from '../../Main/Main'
 import { Layout } from '../../../components/Layout/Layout'
-import { MainBottom } from '../../Mainbottom/Mainbottom'
+import { Home } from '../../../pages/Home'
 
 function App() {
     return (
@@ -15,7 +14,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route path="/" element={<Main />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="prise" element={<Prise />} />
                         <Route path="gallery" element={<Gallery />} />
                         <Route path="faq" element={<Faq />} />

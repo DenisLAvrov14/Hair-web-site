@@ -1,0 +1,34 @@
+/* MainBottom.css */
+.bottom-container {
+    background-image: url('../../public/Mainbottom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    width: 45%; /* Задаем ширину блока */
+    padding: 20px; /* Внутренние отступы для блока */
+    margin-top: 10%;
+    text-align: center;
+}
+
+.block p {
+    margin: 0 0 10px; /* Отступ снизу для параграфов в блоке */
+}
+
+.block button {
+    background-color: #103c3b; /* Цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    border: none; /* Убираем границу у кнопки */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+}
+
+.block button:hover {
+    background-color: #0a2726; /* Цвет кнопки при наведении */
+}

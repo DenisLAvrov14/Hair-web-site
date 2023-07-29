@@ -1,12 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Mainbottom.css'
 
 export const MainBottom = () => {
     return (
-        <div className="main-bottom-container">
+        <div className="bottom-container">
             {/* First Block */}
             <div className="block">
-                <p>First Block Text Line 1</p>
+                <p>
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssaaaaaaaaaaaaaaaaaaaaa
+                </p>
                 <p>First Block Text Line 2</p>
                 <NavLink to="/gallery">
                     <button>Go to Gallery</button>
