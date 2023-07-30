@@ -13,7 +13,7 @@ import im9 from '../../public/Images/Image (9).png'
 
 const sources = [im1, im2, im3, im4, im5, im6, im7, im8, im9]
 
-export const Gallery = () => {
+export function Gallery() {
     const [open, setOpen] = useState(false)
     const [source, setSource] = useState(null)
 
