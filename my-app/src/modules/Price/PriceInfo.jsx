@@ -1,7 +1,7 @@
 import React from 'react'
-import './Prise1.css'
+import './PriceInfo.css'
 
-export const Prise1 = () => {
+export const PriceInfo = () => {
     return (
         <div className="prise1-container">
             <h2>Список цен за фоликулы:</h2>
@@ -15,4 +15,4 @@ export const Prise1 = () => {
     )
 }
 
-export default Prise1
+export default PriceInfo

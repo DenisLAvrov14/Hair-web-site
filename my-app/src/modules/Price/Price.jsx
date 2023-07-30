@@ -1,7 +1,7 @@
 import React from 'react'
-import './Prise.css'
+import './Price.css'
 
-export const Prise = () => {
+export const Price = () => {
     return (
         <div className="prise-container">
             {/* Текст в стиле "Как говорил Толстой..." */}
@@ -18,4 +18,4 @@ export const Prise = () => {
     )
 }
 
-export default Prise
+export default Price

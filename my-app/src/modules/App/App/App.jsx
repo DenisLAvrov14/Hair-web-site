@@ -2,11 +2,11 @@ import React from 'react'
 import './App.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom'
-import { Priselist } from '../../../pages/Priselist'
+import { Pricelist } from '../../Pricelist/Pricelist'
 import Gallery from '../../Gallery/Gallery'
 import { Faq } from '../../Faq/Faq'
 import { Layout } from '../../../components/Layout/Layout'
-import { Home } from '../../../pages/Home'
+import { Home } from '../../Home/Home'
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route path="/" element={<Home />} />
-                        <Route path="prise" element={<Priselist />} />
+                        <Route path="prise" element={<Pricelist />} />
                         <Route path="gallery" element={<Gallery />} />
                         <Route path="faq" element={<Faq />} />
                     </Route>

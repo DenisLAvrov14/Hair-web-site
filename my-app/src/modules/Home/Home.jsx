@@ -1,5 +1,5 @@
-import { Main } from '../modules/Main/Main'
-import { MainBottom } from '../modules/Mainbottom/Mainbottom'
+import { Main } from '../Main/Main'
+import { MainBottom } from '../Mainbottom/Mainbottom'
 
 export const Home = () => {
     return (

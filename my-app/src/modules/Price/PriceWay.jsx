@@ -1,7 +1,7 @@
 import React from 'react'
-import './Prise2.css'
+import './PriceWay.css'
 
-export const Prise2 = () => {
+export const PriceWay = () => {
     return (
         <div className="prise-info">
             <h2>Информация о перелете и проживании:</h2>
@@ -20,4 +20,4 @@ export const Prise2 = () => {
     )
 }
 
-export default Prise2
+export default PriceWay
