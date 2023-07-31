@@ -25,7 +25,11 @@ export function Gallery() {
     return (
         <div className="Gallery">
             {open ? (
-                <Image src={source} onClick={handleClick} className="opened" />
+                <Image
+                    src={source}
+                    onClick={handleClick}
+                    className=" example-opened"
+                />
             ) : (
                 sources.map((source) => {
                     return (

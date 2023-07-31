@@ -18,13 +18,13 @@ img {
     cursor: pointer;
 }
 
-img:hover:not(.opened, .logo) {
+img:hover:not(.example-opened, .logo, .custom-logo) {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
     transform: scale(1.2);
 }
 
-.opened {
+.example-opened {
     width: 650px;
     height: 650px;
-    margin: 100px auto;
+    margin: 100px;
 }

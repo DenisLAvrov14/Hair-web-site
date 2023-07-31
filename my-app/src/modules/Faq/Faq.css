@@ -1,0 +1,26 @@
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.faq-question p {
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.faq-question.opened p {
+    display: block;
+    color: black;
+}
