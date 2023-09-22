@@ -1,34 +1,44 @@
-/* MainBottom.css */
 .bottom-container {
-    background-image: url('../../public/Mainbottom.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+    background-color: #003d3b;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .block {
-    width: 45%; /* Задаем ширину блока */
-    padding: 20px; /* Внутренние отступы для блока */
-    margin-top: 10%;
-    text-align: center;
+    width: 90%;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 1% 1%;
+}
+
+.block:first-of-type {
+    margin-top: 3%;
 }
 
 .block p {
-    margin: 0 0 10px; /* Отступ снизу для параграфов в блоке */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .block button {
-    background-color: #103c3b; /* Цвет кнопки */
-    color: white; /* Цвет текста на кнопке */
-    padding: 10px 20px; /* Внутренние отступы для кнопки */
-    border: none; /* Убираем границу у кнопки */
-    border-radius: 5px; /* Закругляем углы кнопки */
-    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    background-color: #f69a73;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    float: right; /* Выравниваем кнопку справа */
 }
 
 .block button:hover {
-    background-color: #0a2726; /* Цвет кнопки при наведении */
+    background-color: #d87d56;
 }

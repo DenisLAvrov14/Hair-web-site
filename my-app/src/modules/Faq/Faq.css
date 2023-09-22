@@ -1,26 +1,39 @@
+/* Общие стили для компонента с вопросами и ответами */
 .faq-container {
+    font-family: sans-serif;
+    background-color: blanchedalmond; /* Цвет фона */
+    padding: 20px; /* Внутренние отступы */
     max-width: 600px;
+    height: 100vh;
     margin: 0 auto;
 }
 
+/* Стили для вопросов */
 .faq-question {
+    background-color: blanchedalmond; /* Цвет фона */
     cursor: pointer;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
 
 .faq-question h3 {
+    background-color: blanchedalmond; /* Цвет фона */
     font-size: 18px;
     margin: 0;
 }
 
+/* Стили для ответов */
 .faq-question p {
+    background-color: blanchedalmond; /* Цвет фона */
     display: none;
     font-size: 14px;
     margin-top: 5px;
+    text-align: left; /* Выравнивание текста по левому краю */
 }
 
+/* Стили для открытых ответов */
 .faq-question.opened p {
+    background-color: blanchedalmond; /* Цвет фона */
     display: block;
-    color: black;
+    color: black; /* Цвет текста ответов */
 }
