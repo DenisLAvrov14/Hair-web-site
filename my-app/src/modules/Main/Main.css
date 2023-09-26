@@ -1,4 +1,3 @@
-/* Main.css */
 .main-container {
     background: linear-gradient(to right, white, blanchedalmond);
     display: flex;
@@ -7,7 +6,6 @@
 }
 
 .present-container {
-    background-image: url(../../public/Main.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -19,12 +17,37 @@
     height: 100%;
 }
 
-/* Новый контейнер для текста */
-.text-section {
-    width: 100%;
-    order: -1; /* Поместить текст над логотипами */
-    text-align: center; /* Выравнивание текста по центру */
-    margin-top: 200px; /* Отступ снизу */
+.wellcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wellcome-image {
+    background-image: url(../../public/Main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+    border-radius: 1% 0% 0% 1%;
+    width: 400px; /* Ширина блока изображения */
+    height: 600px; /* Высота блока изображения */
+    flex: 0 0 400px; /* Жестко задаем ширину */
+}
+
+.Wellcome-text {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Высота блока текста, чтобы совпадала с изображением */
+    width: 400px; /* 50% ширины родительского блока .wellcome-content */
+    margin: 0 auto; /* Автоматическое выравнивание по горизонтали */
+    background-color: rgba(0, 0, 0, 0.25); /* Чёрный цвет с 50% прозрачности */
+    border: 1px solid transparent;
+    border-radius: 0% 1% 1% 0%;
 }
 
 /* Контейнер для логотипов */
@@ -68,25 +91,16 @@ p {
     margin-top: 2%;
 }
 
-.Wellcome-text {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* Автоматическая высота в зависимости от содержимого */
-    width: 90vh;
-    padding: 10px;
-    margin: 0 auto; /* Автоматическое выравнивание по горизонтали */
-    background-color: rgba(0, 0, 0, 0.25); /* Чёрный цвет с 50% прозрачности */
-    border: 1px solid transparent;
-    border-radius: 20px;
-    margin-top: 1%;
-}
-
 /* Стили для .form-container */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Изменяем направление для маленьких и средних экранов */
+    justify-content: center; /* Выравниваем по вертикали по центру */
+    align-items: center; /* Выравниваем по горизонтали по центру */
+    width: 400px; /* Ширина блока изображения */
+    height: 600px; /* Высота блока изображения */
+    margin-top: -4%;
+}
 
 .decor {
     position: relative;
@@ -111,9 +125,12 @@ p {
     left: -30px;
 }
 
+.form-right-decoration:before {
+    display: none;
+}
+
 .form-left-decoration:before,
 .form-left-decoration:after,
-.form-right-decoration:before,
 .form-right-decoration:after {
     content: '';
     position: absolute;
@@ -153,7 +170,8 @@ p {
 }
 
 .form-inner {
-    padding: 50px;
+    height: 570px;
+    padding: 0 50px 0 50px;
     text-align: center; /* Центрирование текста по центру формы */
 }
 
@@ -161,7 +179,7 @@ p {
 .form-inner textarea {
     display: block;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0 0 10px;
     margin-bottom: 10px;
     background: #e9eff6;
     line-height: 40px;
@@ -193,7 +211,7 @@ p {
 }
 
 .form-inner h3 {
-    margin-top: 0;
+    margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -219,255 +237,103 @@ p {
     text-align: center;
     height: 200px;
     width: 200px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
+}
+
+/* Для экранов с шириной до 1200px включительно */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    }
+
+    .wellcome-content {
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    }
+
+    .present-container,
+    .logo-wrapper {
+        /* Поменяли местами .form-container и .logo-wrapper */
+        width: 100%; /* Растягиваем их на всю ширину .main-container */
+        max-width: none; /* Отменяем максимальную ширину, если она установлена */
+        margin: 20px 0; /* Добавляем отступ между ними */
+    }
+
+    .wellcome-image {
+        display: none;
+    }
+
+    .Wellcome-text {
+        width: auto;
+        border-radius: 1%;
+        margin: 2px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    /* Main.css */
     .main-container {
-        background: linear-gradient(to right, white, blanchedalmond);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; /* Изменяем направление для маленьких и средних экранов */
-        padding: 20px; /* Добавляем отступы для маленьких и средних экранов */
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
     }
 
-    .present-container {
-        background-image: url(../../public/Main.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+    .wellcome-content {
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
     }
 
-    /* Новый контейнер для текста */
-    .text-section {
-        width: 80%;
-        order: -1; /* Поместить текст над логотипами */
-        text-align: center; /* Выравнивание текста по центру */
-        margin-top: 10px; /* Отступ снизу для маленьких и средних экранов */
-        padding: 20px; /* Добавляем внутренний отступ для маленьких и средних экранов */
-        background-color: rgba(
-            0,
-            0,
-            0,
-            0.25
-        ); /* Чёрный цвет с 25% прозрачности */
-        border: 1px solid transparent;
-        border-radius: 20px;
-    }
-
-    /* Контейнер для логотипов */
+    .present-container,
     .logo-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* Поменяли местами .form-container и .logo-wrapper */
+        width: 100%; /* Растягиваем их на всю ширину .main-container */
+        max-width: none; /* Отменяем максимальную ширину, если она установлена */
+        margin: 20px 0; /* Добавляем отступ между ними */
     }
 
-    /* Стили для logo-section */
-    .logo-section {
-        height: 150px;
-        width: 150px;
-        margin: 20px; /* Уменьшаем отступы для маленьких и средних экранов */
-        border: 1px solid grey;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: blanchedalmond;
-        border-radius: 20px;
-        text-align: center;
-    }
-
-    .custom-logo {
-        background-color: aliceblue;
-        border: 1px solid grey;
-        border-radius: 100px;
-        width: 50px;
-        height: auto;
-        padding: 5%;
-    }
-
-    p {
-        color: black;
-        font-weight: bold;
-        font-size: 14px;
-        text-decoration: none;
-        text-align: center;
-        margin-top: 2%;
+    .wellcome-image {
+        display: none;
     }
 
     .Wellcome-text {
-        text-align: center;
-        color: whitesmoke;
-        font-size: 16px;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto; /* Автоматическая высота в зависимости от содержимого */
-        width: 90%; /* Изменяем ширину для маленьких и средних экранов */
-        margin: 20px auto; /* Автоматическое выравнивание по горизонтали и увеличиваем отступы */
-        background-color: rgba(
-            0,
-            0,
-            0,
-            0.25
-        ); /* Чёрный цвет с 25% прозрачности */
-        border: 1px solid transparent;
-        border-radius: 20px;
-    }
-
-    /* Стили для .form-container */
-    .form-container {
-        flex-direction: column; /* Изменяем направление для маленьких и средних экранов */
-    }
-
-    .decor {
-        position: relative;
-        max-width: 400px;
-        margin: 50px auto 0;
-        background: white;
-        border-radius: 30px;
-    }
-    a {
-        font-size: 12px;
+        width: auto;
+        border-radius: 1%;
+        margin: 2px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    /* Main.css */
+@media screen and (max-width: 1366px) {
     .main-container {
-        background: linear-gradient(to right, white, blanchedalmond);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; /* Изменяем направление для маленьких и средних экранов */
-        padding: 20px; /* Добавляем отступы для маленьких и средних экранов */
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
     }
 
-    .present-container {
-        background-image: url(../../public/Main.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+    .wellcome-content {
+        flex-direction: column; /* Элементы будут идти по вертикали сверху вниз */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
     }
 
-    /* Новый контейнер для текста */
-    .text-section {
-        width: 80%;
-        order: -1; /* Поместить текст над логотипами */
-        text-align: center; /* Выравнивание текста по центру */
-        margin-top: 20px; /* Отступ снизу для маленьких и средних экранов */
-        padding: 10px; /* Добавляем внутренний отступ для маленьких и средних экранов */
-        background-color: rgba(
-            0,
-            0,
-            0,
-            0.25
-        ); /* Чёрный цвет с 25% прозрачности */
-        border: 1px solid transparent;
-        border-radius: 20px;
-    }
-
-    /* Контейнер для логотипов */
+    .present-container,
     .logo-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* Поменяли местами .form-container и .logo-wrapper */
+        width: 100%; /* Растягиваем их на всю ширину .main-container */
+        max-width: none; /* Отменяем максимальную ширину, если она установлена */
+        margin: 20px 0; /* Добавляем отступ между ними */
     }
 
-    /* Стили для logo-section */
-    .logo-section {
-        height: 150px;
-        width: 150px;
-        margin: 20px; /* Уменьшаем отступы для маленьких и средних экранов */
-        border: 1px solid grey;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: blanchedalmond;
-        border-radius: 20px;
-        text-align: center;
-    }
-
-    .custom-logo {
-        background-color: aliceblue;
-        border: 1px solid grey;
-        border-radius: 100px;
-        width: 50px;
-        height: auto;
-        padding: 5%;
-    }
-
-    p {
-        color: black;
-        font-weight: bold;
-        font-size: 14px;
-        text-decoration: none;
-        text-align: center;
-        margin-top: 2%;
+    .wellcome-image {
+        display: none;
     }
 
     .Wellcome-text {
-        text-align: center;
-        color: whitesmoke;
-        font-size: 16px;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto; /* Автоматическая высота в зависимости от содержимого */
-        width: 90%; /* Изменяем ширину для маленьких и средних экранов */
-        margin: 20px auto; /* Автоматическое выравнивание по горизонтали и увеличиваем отступы */
-        background-color: rgba(
-            0,
-            0,
-            0,
-            0.25
-        ); /* Чёрный цвет с 25% прозрачности */
-        border: 1px solid transparent;
-        border-radius: 20px;
+        width: auto;
+        border-radius: 1%;
+        margin: 2px;
     }
 
-    /* Стили для .form-container */
     .form-container {
-        flex-direction: column; /* Изменяем направление для маленьких и средних экранов */
-    }
-
-    .decor {
-        position: relative;
-        max-width: 400px;
-        margin: 50px auto 0;
-        background: white;
-        border-radius: 30px;
-    }
-    a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 1201px) {
-    a {
-        font-size: 18px;
+        margin-top: 10px;
     }
 }
