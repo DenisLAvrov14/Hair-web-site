@@ -1,0 +1,56 @@
+/* MainStory.css */
+
+.blog-story {
+    display: flex;
+    flex-direction: column;
+    gap: 1px; /* Расстояние между блоками */
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
+}
+
+.story-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Выравнивание текста и изображения по вертикали */
+}
+
+.story-text {
+    flex: 1; /* Растягиваем текстовый блок, чтобы занять все доступное пространство */
+    background-color: blanchedalmond;
+    padding: 20px; /* Добавляем внутренний отступ для текста */
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+    margin: 20px;
+}
+
+.story-image {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание изображения справа */
+    margin: 20px;
+}
+
+.story-image img {
+    max-width: 100%; /* Максимальная ширина изображения, чтобы избежать переполнения */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции изображения */
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.story-text p {
+    color: black; /* Устанавливаем белый цвет текста */
+}
+
+/* Медиа-запросы для адаптации стилей */
+/* Стили для маленьких экранов (мобильные устройства) */
+@media screen and (max-width: 768px) {
+    .story-block {
+        flex-direction: column; /* Изменяем направление flex-контейнера на колонну */
+    }
+
+    .story-text {
+        margin-top: 20px; /* Добавляем отступ между блоками */
+    }
+}
