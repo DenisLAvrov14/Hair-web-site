@@ -1,24 +1,35 @@
 /* Prise1.css */
 
 .prise-booking {
-    background-color: #006066; /* Задаем фоновый цвет контейнера */
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
     padding: 20px; /* Добавляем внутренние отступы для контейнера */
 }
 
+.prise-booking-wrap {
+    background-color: blanchedalmond;
+    width: 80%;
+    padding: 5px;
+    margin: 0 auto; /* Выравниваем контейнер по центру экрана */
+    border: gray;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
 h2 {
-    color: white; /* Задаем цвет текста */
+    color: black; /* Задаем цвет текста */
     font-size: 20px; /* Задаем размер шрифта */
     text-align: center; /* Выравниваем текст по центру */
     margin-bottom: 10px; /* Добавляем отступ снизу для заголовка */
 }
 
 p.booking {
-    color: white; /* Задаем цвет текста элементов списка */
+    color: black; /* Задаем цвет текста элементов списка */
     font-size: 16px; /* Задаем размер шрифта элементов списка */
     margin-bottom: 5px; /* Добавляем отступ снизу для элементов списка */
 }
 
 a {
-    color: white;
+    color: black;
     font-style: 16px;
 }

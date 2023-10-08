@@ -10,8 +10,38 @@ import im6 from '../../public/Images/Image (6).png'
 import im7 from '../../public/Images/Image (7).png'
 import im8 from '../../public/Images/Image (8).png'
 import im9 from '../../public/Images/Image (9).png'
+import im10 from '../../public/Images/Image (10).png'
+import im11 from '../../public/Images/Image (11).png'
+import im12 from '../../public/Images/Image (12).png'
+import im13 from '../../public/Images/Image (13).png'
+import im14 from '../../public/Images/Image (14).png'
+import im15 from '../../public/Images/Image (15).png'
+import im16 from '../../public/Images/Image (16).png'
+import im17 from '../../public/Images/Image (17).png'
+import im18 from '../../public/Images/Image (18).png'
+import im19 from '../../public/Images/Image (19).png'
 
-const sources = [im1, im2, im3, im4, im5, im6, im7, im8, im9]
+const sources = [
+    im1,
+    im2,
+    im3,
+    im4,
+    im5,
+    im6,
+    im7,
+    im8,
+    im9,
+    im10,
+    im11,
+    im12,
+    im13,
+    im14,
+    im15,
+    im16,
+    im17,
+    im18,
+    im19,
+]
 
 export function Gallery() {
     const [open, setOpen] = useState(false)

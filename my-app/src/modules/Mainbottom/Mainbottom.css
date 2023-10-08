@@ -1,5 +1,5 @@
 .bottom-container {
-    background-color: #003d3b;
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

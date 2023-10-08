@@ -1,7 +1,7 @@
 /* Price.css */
 
 .prise-container {
-    background-color: blanchedalmond; /* Задаем фоновый цвет контейнера */
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
     padding: 20px; /* Добавляем внутренние отступы для текста */
     max-width: 100%; /* Устанавливаем максимальную ширину контейнера */
     margin: 0 auto; /* Выравниваем контейнер по центру экрана */
@@ -9,12 +9,18 @@
 }
 
 h1 {
+    background-color: blanchedalmond;
     width: 80%;
     color: black; /* Задаем цвет текста */
-    font-size: 22px; /* Увеличиваем размер шрифта заголовка */
+    font-size: 20px; /* Увеличиваем размер шрифта заголовка */
     text-align: center; /* Выравниваем текст по центру */
     line-height: 1.5; /* Задаем высоту строки для лучшего чтения текста */
     margin: 0 auto; /* Центрируем элемент по горизонтали */
+    padding: 5px;
+    border: gray;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .prise-container p {

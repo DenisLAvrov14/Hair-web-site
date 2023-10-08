@@ -1,26 +1,33 @@
 /* Общие стили для галереи */
 .Gallery {
-    background-color: blanchedalmond; /* Цвет фона */
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
     font-family: sans-serif;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Центрируем элементы */
     width: 100%; /* Ширина занимает всю доступную ширину */
+    height: 100%;
     padding: 15px; /* Добавляем внутренние отступы */
 }
 
 /* Стили для изображений */
-img:not(.logo-form-container, .custom-logo, .logo) {
-    width: 150px; /* Уменьшаем ширину изображений */
-    height: 150px; /* Уменьшаем высоту изображений */
+img:not(.logo-form-container, .custom-logo, .logo, .story-image img) {
+    width: 250px; /* Уменьшаем ширину изображений */
+    height: 250px; /* Уменьшаем высоту изображений */
     margin: 10px; /* Уменьшаем отступы между изображениями */
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 /* Стили для изображений при наведении */
-img:hover:not(.example-opened, .logo, .custom-logo, .logo-form-container) {
+img:hover:not(
+        .example-opened,
+        .logo,
+        .custom-logo,
+        .logo-form-container,
+        .story-image img
+    ) {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Уменьшаем тень и масштабируем */
     transform: scale(1.1); /* Немного увеличиваем размер при наведении */
 }

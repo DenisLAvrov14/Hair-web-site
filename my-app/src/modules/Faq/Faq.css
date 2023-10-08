@@ -1,11 +1,16 @@
 /* Общие стили для компонента с вопросами и ответами */
 .faq-container {
-    font-family: sans-serif;
-    background-color: blanchedalmond; /* Цвет фона */
+    background: transparent; /* фон */
     padding: 20px; /* Внутренние отступы */
     max-width: 600px;
     height: 100vh;
     margin: 0 auto;
+}
+
+.faq-container-wrapper {
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
+    height: 100vh;
+    overflow: auto; /* Добавит полосы прокрутки, если содержимое не помещается */
 }
 
 /* Стили для вопросов */

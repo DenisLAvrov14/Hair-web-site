@@ -3,7 +3,7 @@ import Foto1 from '../../public/Foto1.png'
 import Foto2 from '../../public/Foto2.png'
 import Foto3 from '../../public/Foto3.png'
 
-import './Mainstory.css' // Подключаем файл стилей
+import './MainStory.css' // Подключаем файл стилей
 
 export const MainStory = () => {
     return (

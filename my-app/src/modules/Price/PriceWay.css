@@ -1,9 +1,20 @@
 /* Prise2.css */
 
 .prise-transfer {
-    background-color: blanchedalmond; /* Задаем фоновый цвет контейнера */
+    background: linear-gradient(to right, #003d3b, lavender); /* фон */
     height: 50vh;
     padding: 20px; /* Добавляем внутренние отступы для контейнера */
+}
+
+.prise-transfer-wrap {
+    background-color: blanchedalmond;
+    width: 80%;
+    padding: 5px;
+    margin: 0 auto; /* Выравниваем контейнер по центру экрана */
+    border: gray;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 h2.transfer {

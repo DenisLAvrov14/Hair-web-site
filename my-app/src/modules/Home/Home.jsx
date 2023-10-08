@@ -1,5 +1,5 @@
 import { Main } from '../Main/Main'
-import { Mainstory } from '../Mainstory/Mainstory'
+import { MainStory } from '../MainStory/MainStory'
 import { MainBottom } from '../Mainbottom/Mainbottom'
 
 export const Home = () => {
@@ -7,7 +7,7 @@ export const Home = () => {
         <div>
             <Main />
             <MainBottom />
-            <Mainstory />
+            <MainStory />
         </div>
     )
 }
