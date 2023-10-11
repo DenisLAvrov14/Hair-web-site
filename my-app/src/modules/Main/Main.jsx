@@ -40,9 +40,13 @@ export const Main = () => {
                             className="logo-form-container"
                             alt="Логотип"
                         />
+                        <div id="notification" class="hidden">
+                            Ваша заявка отправлена
+                        </div>
+
                         <form
                             className="decor"
-                            action="/sendEmail"
+                            action="http://localhost:443/sendEmail"
                             method="POST"
                         >
                             <div className="form-left-decoration"></div>

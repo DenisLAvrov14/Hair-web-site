@@ -340,3 +340,19 @@ p {
         margin-top: 10px;
     }
 }
+
+#notification {
+    background: #4caf50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
