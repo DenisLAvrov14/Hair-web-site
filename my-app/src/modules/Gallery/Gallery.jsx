@@ -59,14 +59,20 @@ export function Gallery() {
                     src={source}
                     onClick={handleClick}
                     className=" example-opened"
+                    alt="Помидор"
+                    title={`Tomato ${sources.indexOf(source) + 1}`}
                 />
             ) : (
-                sources.map((source) => {
+                sources.map((source, index) => {
                     return (
                         <Image
                             key={source.toString()}
                             src={source}
                             onClick={handleClick}
+                            alt="Результат пересадки волос"
+                            title={`Пересадка волос до и после фото ${
+                                index + 1
+                            }`}
                         />
                     )
                 })

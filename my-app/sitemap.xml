@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mercinmed.ru/</loc> <!-- главная -->
+    </url>
+    <url>
+        <loc>https://mercinmed.ru/prise</loc> <!-- цены -->
+    </url>
+    <url>
+        <loc>https://mercinmed.ru/gallery</loc> <!-- галерея -->
+    </url>
+    <url>
+        <loc>https://mercinmed.ru/faq</loc> <!-- вопросы -->
+    </url>
+</urlset>

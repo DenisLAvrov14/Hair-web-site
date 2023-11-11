@@ -15,6 +15,7 @@
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
+    text-align: center;
 }
 
 h2.transfer {
@@ -24,7 +25,7 @@ h2.transfer {
     margin-bottom: 10px; /* Добавляем отступ снизу для заголовка */
 }
 
-p {
+.transfer p {
     color: white; /* Задаем цвет текста параграфов */
     font-size: 18px; /* Задаем размер шрифта параграфов */
     line-height: 1.5; /* Задаем высоту строки для улучшения читаемости */

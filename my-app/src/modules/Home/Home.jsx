@@ -1,6 +1,7 @@
 import { Main } from '../Main/Main'
 import { MainStory } from '../MainStory/MainStory'
 import { MainBottom } from '../Mainbottom/Mainbottom'
+import Footer from '../../components/Footer/Footer'
 
 export const Home = () => {
     return (
@@ -8,6 +9,7 @@ export const Home = () => {
             <Main />
             <MainBottom />
             <MainStory />
+            <Footer />
         </div>
     )
 }

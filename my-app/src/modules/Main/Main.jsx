@@ -44,11 +44,7 @@ export const Main = () => {
                             Ваша заявка отправлена
                         </div>
 
-                        <form
-                            className="decor"
-                            action="http://localhost:443/sendEmail"
-                            method="POST"
-                        >
+                        <form class="decor" action="/sendemail" method="POST">
                             <div className="form-left-decoration"></div>
                             <div className="form-right-decoration"></div>
                             <div className="circle"></div>
@@ -117,7 +113,9 @@ export const Main = () => {
                             alt="Анестезия"
                             className="custom-logo"
                         />
-                        <p>С анастезией</p>
+                        <p>
+                            С анастезией <br /> без боли
+                        </p>
                     </div>
 
                     <div className="logo-section">
@@ -126,7 +124,9 @@ export const Main = () => {
                             alt="Метод FUE"
                             className="custom-logo"
                         />
-                        <p>Метод FUE</p>
+                        <p>
+                            Современный <br /> метод FUE
+                        </p>
                     </div>
 
                     <div className="logo-section">
